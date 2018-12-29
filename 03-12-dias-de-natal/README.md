@@ -17,3 +17,13 @@ Há um certo padrão na letra da música. Identifique este padrão e escreva um 
 
 - Não, você não pode copiar e colar a letra da música.
 - O último verso de cada estrofe ("*a Partridge in a Pear Tree*") pode ser substituído por "*1 Partridge in a Pear Tree*".
+
+## Soluções
+
+- Nyo.py [Python]: 1º lugar (30 pontos)
+- LeFalse [PHP]: 2º lugar (20 pontos)
+- Hideki [JavaScript]: 3º lugar (10 pontos)
+- overmanniac [C]: 4º lugar (10 pontos)
+- <\/Nathan> [Python]: 5º lugar (10 pontos)
+- Spriggan [Python]: 6º lugar (5 pontos)
+- 0x13A [Ruby]: Coordenador
