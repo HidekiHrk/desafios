@@ -14,3 +14,8 @@ Você deve pesquisar quais são os passos do algoritmo de Luhn e implementá-lo.
 
 - 4698635614050849 é um número válido.
 - 6647612517110247 é um número inválido.
+
+## Soluções
+
+- Nyo.py [Python]: 1º lugar (30 pontos)
+- Natts [Python]: 2º lugar (20 pontos)
