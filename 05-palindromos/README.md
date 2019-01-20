@@ -11,6 +11,6 @@ Escreva um programa que checa se uma palavra é ou não um palíndromo. Você n�
 ## Soluções
 
 - Nyo.py [Python]: 1º lugar (30 pontos)
-- </Nathan> [Python]: 2º lugar (20 pontos)
-- Hideki [Kotin]: 3º lugar (10 pontos)
+- <\/Nathan> [Python]: 2º lugar (20 pontos)
+- Hideki [Kotlin]: 3º lugar (10 pontos)
 - Snow [Python]: 4º lugar (5 pontos)
