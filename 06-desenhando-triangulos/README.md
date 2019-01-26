@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Um triângulo retângulo é um triângulo que possuí dois ângulos agudos (< 90º) e um ângulo reto (90º).
+Um triângulo retângulo é um triângulo que possui dois ângulos agudos (< 90º) e um ângulo reto (90º).
 
 ## O Desafio
 
