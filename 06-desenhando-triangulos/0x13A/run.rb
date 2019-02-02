@@ -1,19 +1,15 @@
-require_relative './TrianguloRetangulo.rb'
+require_relative './triangulo_retangulo.rb'
 
 print 'Digite a altura do triângulo: '
-tamanho = gets.strip.to_i
+altura = gets.strip.to_i
 
-puts
+triangulo = TrianguloRetangulo.new(altura: altura)
 
 puts 'Sólido:'
-TrianguloRetangulo.desenhar_solido(tamanho: tamanho)
-
-puts
+triangulo.desenhar_solido
 
 puts 'Borda:'
-TrianguloRetangulo.desenhar_borda(tamanho: tamanho)
-
-puts
+triangulo.desenhar_borda
 
 puts 'Números:'
-TrianguloRetangulo.desenhar_numeros(tamanho: tamanho)
+triangulo.desenhar_numeros
