@@ -16,3 +16,7 @@ Digamos que o usuário queira analisar o raio **0-1023** (1024 portas) no IP **2
 - 216.58.202.14:443
 
 Já que **80** (HTTP) e **443** (HTTPS) são as únicas portas abertas nesse IP.
+
+## Soluções
+
+- Chlorine [Ruby]: Coordenador
