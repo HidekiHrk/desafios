@@ -10,11 +10,12 @@ module Fatoracao
   module Extensoes
     module Integer
       def fatorar
-        raise 'O número precisa ser 2 ou maior que 2' if self < 2
-        return { self => 1 } if Prime.prime? self
+        numero = self
 
-        numero  = self
-        primos  = Prime.first self
+        raise 'O número precisa ser 2 ou maior que 2' if numero < 2
+        return { numero => 1 } if Prime.prime? numero
+
+        primos  = (2..numero).select { |n| Prime.prime? n }
         fatores = Hash.new 0
 
         primos.each do |n|
