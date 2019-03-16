@@ -1,0 +1,5 @@
+task :test do
+  puts `bundle exec rspec spec --format documentation`
+end
+
+task :default => [:test]
