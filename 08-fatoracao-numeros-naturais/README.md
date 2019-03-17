@@ -11,3 +11,8 @@ Você deve escrever um programa que pede um número maior que 1 ao usuário e re
 ## Exemplos
 
 Digamos que o usuário digitou o número 24. Seu programa deve retornar **2³ x 3**. Agora suponha que o usuário digitou o número 630. Seu programa deve retornar **3² x 2 x 5 x 7**.
+
+## Soluções
+
+- Nio.py [Python,Cython,JavaScript,Ruby,Lua,C#] - 1º lugar (30 pontos)
+- Chlorine [Ruby] - Coordenador
