@@ -1,0 +1,113 @@
+#!/bin/bash
+
+# Solução desenvolvida por MEWBI
+#
+# Entrega: 7/4/19 01:14 BRT
+#
+# Pontos (base): 30
+# Pontos adicionais: 10 (comentários + README)
+# Pontos (total): 40
+#
+# Forma(s) de contato:
+#  - Discord: Mewbi#5028
+#  - E-mail: felipefernandesgsc@gmail.com
+#  - Steam: the_mewbi
+
+#---------------------------------------Cabeçalho
+# Autor
+#   Felipe Fernandes
+#
+# Programa
+#   Lacuna Binária
+#
+# Data
+# 6/4/2019 23:42
+#
+# Descrição
+#   Converte um número natural maior que zero pa-
+# ra binário e informa a quantidade de lacunas
+# binárias (e seus tamanhos).
+#------------------------------------------------
+
+#Verifica se não foi inserido nenhum argumento
+if [ $# = "0" ]
+   then
+cat << END
+
+   Não foi inserido nenhum argumento meu caro consagrado.
+
+   Para utilizar o programa digite:
+	./lacuna_binaria <número>
+
+   O número tem que ser natural e maior que zero.
+
+END
+   exit 1
+fi
+
+#Verifica se o argumento inserido não é um número
+if ! echo "$1" | grep -v "[^0-9]" &> /dev/null ; then
+echo "Argumento inserido não é numério e válido" ; exit 2
+fi
+
+if [ $1 -le "0" ]
+   then
+   echo -e "\n  Por favor insira um número válido. \n  Este tem que ser natural e maior que zero.\n"
+   exit 2
+fi
+
+#Converte o número para binário
+binario=$(echo "obase=2;$1" | bc -l)
+
+#Verifica quantas lacunas binárias possue o binário
+lacunas=$(echo "obase=2;$1" | bc -l | sed 's/1/\n/g' | grep 0 | wc -w)
+
+#Verifica se o última número é 0, pois caso seja significa que o último
+#conjunto de zeros não é uma lacuna binária
+ultimo_bit=$(echo "$binario" | rev | cut -c 1)
+echo "$ultimo_bit"
+if [ $ultimo_bit = "0" ]
+   then
+   eval "lacunas=\$((lacunas - 1))"
+fi
+
+#Imprimindo os resultados inseridos e as primeiras conversoes
+cat << END
+
+  Número inserido: $1
+
+  Número em binário: $binario
+
+  Quantidade de lacunas binárias: $lacunas
+
+END
+
+#Verifica se não existe lacunas binárias
+if [ $lacunas = "0" ]
+   then
+   echo -e "  O número inserido não possui lacunas binárias.\n"
+   exit 1
+fi
+
+#Adiciona um numero a mais para lacunas para poder fazer o loop until
+#até chegar o número máximo de lacunas que serão analisadas
+eval "lacunas=\$((lacunas + 1))"
+
+#Estipula um valor inicial para o contar cada lacuna de zeros
+linha="1"
+
+#Entra em um loop que conta lacuna por lacuna (no caso é separado linha por linha)
+until [ $linha -ge $lacunas ]
+   do
+   #Conta o valor da primeira lacuna
+contador_lacuna=$(echo "obase=2;$1" | bc -l | sed 's/1/\n/g' \
+| grep 0 | grep -n 0 | grep $linha\
+| cut -d: -f 2 | wc -c)
+   #Por algum motivo o wc esta contando sempre um número a mais da quantia
+   #de zeros existentes, por isso estou subtraindo 1
+   eval "contador_lacuna=\$((contador_lacuna - 1))"
+   #Imprime na tela o resultado obtido
+   echo -e "  A ${linha}ª lacuna possui '$contador_lacuna' zeros\n"
+   #Soma-se mais 1 para poder analisar a próxima lacuna
+   eval "linha=\$((linha + 1))"
+   done
