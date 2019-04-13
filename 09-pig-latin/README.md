@@ -15,3 +15,8 @@
 ## O Desafio
 
 Escreva um programa que pede uma *string* ao usuário e retorna sua tradução para o *pig latin*.
+
+## Soluções
+
+- Nio.pyx [Python] - 1º lugar (35 pontos)
+- Conhecimento [PHP] - 2º lugar 25 (25 pontos)
