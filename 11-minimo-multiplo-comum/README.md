@@ -7,3 +7,8 @@ O mínimo múltiplo comum, abreviado MMC, é o menor número natural positivo qu
 ## O Desafio
 
 Escreva um programa que pede ao menos dois números naturais positivos ao usuário e retorna o MMC entre estes números.
+
+## Soluções
+
+- Mewbi [Shell] - 1º lugar (40 pontos)
+- Chlorine [Ruby] - Coordenador
