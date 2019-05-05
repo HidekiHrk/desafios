@@ -29,4 +29,5 @@ Isso quer dizer que 7 é um número feliz.
 - snow [Java]: 2° lugar (20 pontos)
 - Nyo.py [Python]: 3º lugar (10 pontos)
 - Hideki [C#]: 4º lugar (5 pontos)
+- Nium [Python]: 5º lugar (0 pontos) *[atrasado]*
 - 0x13A [Ruby]: Coordenador
