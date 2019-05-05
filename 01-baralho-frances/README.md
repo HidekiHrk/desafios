@@ -15,4 +15,5 @@ Seu programa também deve ter uma funcionalidade que embaralha o baralho gerado 
 ## Soluções
 
 - overmanniac [C]: 1° lugar (30 pontos)
+- Nium [Python]: 2° lugar (0 pontos) *[atrasado]*
 - 0x13A [Ruby]: Coordenador
