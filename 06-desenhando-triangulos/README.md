@@ -22,4 +22,5 @@ Digamos que o usuário queira um triângulo com altura igual a 8. As seguintes f
 
 - Caio [Python]: 1º lugar (30 pontos)
 - Natts [Python]: 2º lugar (10 pontos)
+- Nium [Python]: 3º lugar (0 pontos) *[atrasado]*
 - 0x13A [Ruby]: Coordenador
